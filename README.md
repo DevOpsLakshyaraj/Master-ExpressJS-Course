@@ -10,5 +10,6 @@ In this course, we will learn how to create websites and develop APIs using expr
 - Introduction to ExpressJS: [Video 1](/video%201/)
 - Our First ExpressJS App: [Video 2](/video%202/)
 - Request & Response Objects: [Video 3](/video%203/)
+- Middlewares: [Video 4](/video%204/)
 
 :- Created with ❤️ By Lakshyaraj Dash -:
