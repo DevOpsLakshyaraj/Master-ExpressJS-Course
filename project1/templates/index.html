@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
+</head>
+<body>
+    <nav class="flex items-center justify-center p-4 shadow">
+        <a href="/" class="text-3xl font-semibold text-emerald-500">PDF Merge Utility</a>
+    </nav>
+
+    <div class="container px-24 my-3">
+        <form action="/merge" method="post" enctype="multipart/form-data">
+            <div class="my-3 flex flex-col">
+                <label for="pdfs" class="text-xl text-emerald-500 font-bold">Upload & Merge</label>
+                <input type="file" name="pdfs" id="pdfs" class="my-3 px-3 py-2 border rounded border-emerald-500" accept="application/pdf" multiple>
+            </div>
+            <button type="submit" class="px-3 py-2 bg-emerald-500 font-semibold border-none rounded text-white cursor-pointer">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+::-webkit-file-upload-button {
+    @apply px-3 py-2 bg-emerald-500 font-semibold border-none rounded text-white cursor-pointer;
+}

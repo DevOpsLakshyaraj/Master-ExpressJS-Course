@@ -11,5 +11,6 @@ In this course, we will learn how to create websites and develop APIs using expr
 - Our First ExpressJS App: [Video 2](/video%202/)
 - Request & Response Objects: [Video 3](/video%203/)
 - Middlewares: [Video 4](/video%204/)
+- Project 1 - PDF Merge Utility: [Video 5](/project1/)
 
 :- Created with ❤️ By Lakshyaraj Dash -:
