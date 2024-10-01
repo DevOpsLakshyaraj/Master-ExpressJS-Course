@@ -12,5 +12,6 @@ In this course, we will learn how to create websites and develop APIs using expr
 - Request & Response Objects: [Video 3](/video%203/)
 - Middlewares: [Video 4](/video%204/)
 - Project 1 - PDF Merge Utility: [Video 5](/project1/)
+- EJS Template Engine: [Video 6](/video%206/)
 
 :- Created with ❤️ By Lakshyaraj Dash -:
