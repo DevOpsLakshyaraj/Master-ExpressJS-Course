@@ -13,5 +13,6 @@ In this course, we will learn how to create websites and develop APIs using expr
 - Middlewares: [Video 4](/video%204/)
 - Project 1 - PDF Merge Utility: [Video 5](/project1/)
 - EJS Template Engine: [Video 6](/video%206/)
+- Installing MongoDB and MongoDB Compass: [Video 7](/video%207/)
 
 :- Created with ❤️ By Lakshyaraj Dash -:
