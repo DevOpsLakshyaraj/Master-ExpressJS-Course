@@ -15,5 +15,6 @@ In this course, we will learn how to create websites and develop APIs using expr
 - EJS Template Engine: [Video 6](/video%206/)
 - Installing MongoDB and MongoDB Compass: [Video 7](/video%207/)
 - Using MongoDB With ExpressJS: [Video 8](/video%208/)
+- Project 2 - URL Shortener: [Video 9](/project2/)
 
 :- Created with ❤️ By Lakshyaraj Dash -:

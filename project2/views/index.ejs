@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <%- include('partials/_navbar') %>
+
+    <div class="container my-4 px-24">
+        <h1 class="text-3xl font-bold text-accent">Welcome to iUrl</h1>
+
+        <form action="/api/new" method="post">
+            <div class="my-3">
+                <div class="label">
+                    <label for="url" class="label-text">Enter Your URL</label>
+                </div>
+                <input type="url" name="url" id="url" placeholder="Type here" class="input input-bordered input-accent w-full" />
+            </div>
+            <button type="submit" class="btn btn-accent btn-sm">Submit</button>
+        </form>
+
+        <hr class="my-4">
+
+        <h1 class="text-3xl font-bold text-accent">Your Shortened URLs</h1>
+        <ul class="my-4">
+            <% urls.forEach((item, index) => { %>
+                <li class="border border-accent p-4 rounded text-accent mb-3 flex items-center justify-between">
+                    <div>
+                        <%= index+1 %>. <a class="underline" href="<%= base_url+'/visit/'+item.shortID %>"><%= base_url+'/visit/'+item.shortID %></a>
+                    </div>
+
+                    <div class="flex gap-1">
+                        <a href="/edit/<%= item._id %>" class="text-white px-3 bg-success rounded"><i class="fa fa-pencil"></i></a>
+                        <a href="/delete/<%= item._id %>" class="text-white px-3 bg-error rounded"><i class="fa fa-trash"></i></a>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

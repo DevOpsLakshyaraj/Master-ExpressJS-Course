@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/tailwind.min.css">
+</head>
+<body>
+    <%- include('partials/_navbar') %>
+
+    <div class="container my-4 px-24">
+        <h1 class="text-3xl font-bold text-accent">Edit Your URL</h1>
+
+        <form action="/api/update" method="post">
+            <input type="hidden" name="id" value="<%= obj._id %>">
+            <div class="my-3">
+                <div class="label">
+                    <label for="url" class="label-text">Enter Your URL</label>
+                </div>
+                <input type="url" name="url" id="url" placeholder="Type here" class="input input-bordered input-accent w-full" value="<%= obj.url %>" />
+            </div>
+            <button type="submit" class="btn btn-accent btn-sm">Update</button>
+        </form>
+    </div>
+</body>
+</html>

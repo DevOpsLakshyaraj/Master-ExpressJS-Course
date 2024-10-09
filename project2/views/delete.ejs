@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/tailwind.min.css">
+</head>
+<body>
+    <%- include('partials/_navbar') %>
+
+    <div class="container my-4 px-24">
+        <h1 class="text-3xl font-bold text-accent">Delete Your URL</h1>
+
+        <form action="/api/delete" method="post">
+            <input type="hidden" name="id" value="<%= obj._id %>">
+            <button type="submit" class="btn btn-error my-6">Confirm Delete</button>
+        </form>
+    </div>
+</body>
+</html>
