@@ -7,6 +7,7 @@ In this course, we will learn how to create websites and develop APIs using expr
 - YouTube Playlist: [https://www.youtube.com/playlist?list=PLrSPU9HbAkiJh2K3xdz-rY_f-hL6nP5G0](https://www.youtube.com/playlist?list=PLrSPU9HbAkiJh2K3xdz-rY_f-hL6nP5G0)
 
 ## Contents
+
 - Introduction to ExpressJS: [Video 1](/video%201/)
 - Our First ExpressJS App: [Video 2](/video%202/)
 - Request & Response Objects: [Video 3](/video%203/)
@@ -17,5 +18,6 @@ In this course, we will learn how to create websites and develop APIs using expr
 - Using MongoDB With ExpressJS: [Video 8](/video%208/)
 - Project 2 - URL Shortener: [Video 9](/project2/)
 - ExpressJS Deployment Tutorial: [Video 10](/video%2010/)
+- Project 3 - Auth App: [Video 10](/project3/)
 
 :- Created with ❤️ By Lakshyaraj Dash -:
