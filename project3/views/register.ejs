@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | iSecure</title>
+    <!-- TODO: replace with minified css  -->
+    <link rel="stylesheet" href="/css/tailwind.min.css">
+</head>
+
+<body>
+    <%- include('partials/_navbar') %>
+
+        <div class="container my-3">
+            <div class="border shadow p-4 w-1/2 mx-auto rounded">
+                <h2 class="text-primary font-bold underline text-2xl text-center">Register For New Account</h2>
+
+                <form action="" method="post">
+                    <div class="form-control my-3">
+                        <span class="label-text">Email Address</span>
+                        <label class="input input-bordered input-primary flex items-center gap-2 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-mail">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <input type="email" name="email" id="email" class="grow"
+                                placeholder="Enter your email address" />
+                        </label>
+                    </div>
+                    <div class="form-control my-3">
+                        <span class="label-text">Password</span>
+                        <label class="input input-bordered input-primary flex items-center gap-2 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-lock">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" name="password" id="password" class="grow"
+                                placeholder="Enter password" />
+                        </label>
+                    </div>
+                    <div class="form-control my-3">
+                        <span class="label-text">Confirm Password</span>
+                        <label class="input input-bordered input-primary flex items-center gap-2 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-lock">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" name="cpassword" id="cpassword" class="grow"
+                                placeholder="Confirm your password" />
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit"><img src="/icons/log-in.svg" alt="">Register</button>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

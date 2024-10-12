@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "compile-tailwind": "pnpm dlx tailwindcss -i ./public/css/input.css -o ./public/css/tailwind.css --watch",
+    "compile-tailwind-minified": "pnpm dlx tailwindcss -i ./public/css/input.css -o ./public/css/tailwind.min.css --minify --watch"
   },
   "keywords": [],
   "author": "",
