@@ -22,10 +22,10 @@ const userSchema = new Schema({
         type: Boolean,
         default: false
     },
-    verifyToken: {
+    verificationToken: {
         type: String
     },
-    verifyTokenExpiry: {
+    verificationTokenExpiry: {
         type: Date
     }
 }, { timestamps: true })
@@ -38,14 +38,14 @@ userSchema.pre("save", async function () {
 })
 
 // Methods
-userSchema.methods = function generateVerifyToken() {
+userSchema.methods.generateVerifyToken = function () {
     const token = crypto.randomUUID();
     return token;
 }
 
-userSchema.methods = function verifyToken(token) {
-    const hasTokenExpired = new Date() > this.verifyTokenExpiry;
-    if (this.verifyToken === token && !hasTokenExpired) {
+userSchema.methods.verifyToken = function (token) {
+    const hasTokenExpired = new Date() > this.verificationTokenExpiry;
+    if (this.verificationToken === token && !hasTokenExpired) {
         return true;
     } else {
         return false;
